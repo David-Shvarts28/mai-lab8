@@ -4,7 +4,6 @@ from src.descriptors import RdCreatTime, TaskValidatError, ValidatField
 from src.task import Task
 from src.task_queue import TaskQueue
 
-
 def build_queue() -> TaskQueue:
     tasks = [
         Task(id="1", description="гусь1", priority=3, status="new"),
