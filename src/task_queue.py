@@ -99,7 +99,6 @@ class TaskQueue:
     def ready_tasks_stream(self):
         """
         Лениво возвращает только готовые задачи.
-        :return: Generator[Task, None, None]
         """
         for task in self._tasks:
             if task.is_ready:
